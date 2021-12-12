@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav_class{
+    display: flex;
+    align-items: center;
+}
+.img_nav{
+    padding: 0;
+    width: 30%;
+    height: 140px;
+}
+.menu_class{    
+    padding: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    list-style: none;   
+}
+
+.menu_class li{
+    display: inline-flex;
+    justify-content: space-evenly;
+
+    /*display: inline-block;*/
+    /*margin-top: 100px;
+    list-style: none;*/
+}
+a{
+    text-decoration: none;
+    color:rgb(173, 47, 38);
+    list-style: none;
+    margin-left:70px;     
+}
+.menu_search{
+    margin-left:10px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: rgb(173, 47, 38);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu_cart{
+    margin-left: 0px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: rgb(173, 47, 38);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu_compte{
+    margin-left: 0px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: rgb(173, 47, 38);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container{
+   
+}
+.img_center{
+    width: 100%;
+    margin-top: 16px;
+    height: 600px;
+}
+.boutique{
+    font-family:'Estonia', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 40px; 
+}
+.cepas_menu{
+    border:none;
+    border-radius: 20px;
+    font-family: 'Estonia', cursive;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 40px;
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    background: none;
+}
+button:hover{
+    background:none;
+
+}
+.cepas_menu svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    border-radius: 8px;
+}
+.cepas_menu rect{
+    width: 100%;
+    height: 100%;
+    stroke: rgb(173, 47, 38);
+    stroke-width: 5px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: 2s ease all;
+}
+.cepas_menu:hover rect {
+    stroke-dashoffset: 0;
+}
+
+/* a continuación grid contenedor padre como lo indica el enunciado*/
+.galeria{
+
+   display: flex;
+   flex-direction:row;
+   justify-content: space-evenly;
+   width: 100%;
+   gap: 80px;
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+
+}
+/* a continuación grid contenedor hijo como lo indica el enunciado*/
+.caja_vinos{
+    box-shadow: 0  1px 1px 0 grey, 0 1px 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;*/
+    width: auto;
+    margin-top: 20px;
+    height: 280px;
+    
+
+}
+.img_vinos{
+   border: none;
+   height: 200px;
+   width: auto;
+   margin: 80px;
+
+}
+.pie{
+    font-family:  Arial, Helvetica, sans-serif; 
+    border:solid 1px hotpink;
+    display: flex;
+    justify-content: center;
+   /*height: 200%;*/
+
+    
+    
+}
+.texto_pie{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
+    
+}
+.tit_arg{
+    font-family: 'Estonia',cursive;
+    font-size: 40px;
+    text-align: center;
+    
+
+}
+.texto_arg{
+    font-family: 'Estonia';
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+
+}
+.subtit_arg{
+    font-family: 'Estonia';
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 145%;
+}
+.linea{
+    background: #361212;
+    height: 1px;
+    margin-left:17%;
+    margin-right: 17%;
+    margin-top: 5px;
+    display: block;
+
+}
+.img_tierra{
+  border:none;
+  position: absolute;
+  transform: translate(480px,200px);
+}
+.form_contact{
+    border: none;
+    width: 35%;
+    margin: auto;
+    background:;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transform: translateX(-400px);
+    filter: brightness(95%);
+   /* animation: escalar 1.5s infinite alternate;*/
+}
+/*
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.05);
+    }
+}
+*/
+.contact{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    margin-bottom: 20px;
+    color: brown;
+}
+.contact_input{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    border:1px solid #d1cbd1;
+    transition: all 1s;
+    background: whitesmoke;
+}
+.contact_input:focus{
+    width: 110%;
+    height: 60px ;
+    font-size: 20px;
+    
+}
+.contact_input_1{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border:1px solid #d1cbd1;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+
+}
+.uvas_contact{
+    width: 20%;
+    height: 50px;
+    transform: translate(275px, -245px);
+    border-radius: 5px;
+}
+.contacto_padre{
+   border: none;
+   display: flex;
+   flex-direction: column;
+   margin-left: 600px;
+   align-content: flex-end;
+   transform: translate(0,-340px);
+}
+.contacto_hijo{
+
+}
+.img_con{
+    border: none;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+.form_contact:hover{
+    filter: brightness(100%);
+}
+.text_cont{
+    border:none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    transform: translate(100px,-60px);
+    margin-bottom: -5px;
+
+}
