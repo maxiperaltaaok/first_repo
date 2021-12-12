@@ -252,6 +252,8 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translate(-500px);
+   
    /* animation: escalar 1.5s infinite alternate;*/
 }
 /*
@@ -280,15 +282,13 @@ button:hover{
     border:1px solid #d1cbd1;
     transition: all 1s;
     background: white;
-    margin: 1vh;
+    margin: 1vh; 
 }
 .contact_input:focus{
     width: 50%;
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
 .contact_input_1{
-  
     border:1px solid #d1cbd1;
     height: 30px;
     font-family: 'Times New Roman', Times, serif;
@@ -327,7 +327,7 @@ button:hover{
     border: none;
     width: 10vh;
     object-fit: cover;
-    
+    transform: translate(200px);  
 }
 .form_contact:hover{
     filter: brightness(100%);
@@ -336,7 +336,7 @@ button:hover{
     border:none;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    transform: translate(100px,-60px);
+    transform: translate(400px,-40px);
 }
 /*Estilos para tablets*/
 @media only screen and(min-width 768px ) and (max-width: 940px){
@@ -417,3 +417,7 @@ button:hover{
    }  
 }
 /*fin pagina de menu a propos*/
+/*footer*/
+.logofooter{
+    height: 60px;
+}
