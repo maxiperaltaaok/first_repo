@@ -421,3 +421,8 @@ button:hover{
 .logofooter{
     height: 60px;
 }
+.footer_bootstrap{
+    height: 450px;
+    display: flex;
+
+}
