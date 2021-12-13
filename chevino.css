@@ -62,9 +62,6 @@ a{
     font-size: 20px;
     cursor: pointer;
 }
-.container{
-   
-}
 /*Fin menu principal para todas las paginas*/
 /*Inicio boutique de pagina home con imagenes de vinos*/
 .img_center{
@@ -422,7 +419,6 @@ button:hover{
     height: 60px;
 }
 .footer_bootstrap{
-    height: 450px;
-    display: flex;
+    
 
 }
