@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-withe">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                  <img src="style_pages/logo.png" alt="logo" width="240vh">
+                  <img src="style_pages/logo.png" alt="logo" width="228vh">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,11 +29,14 @@
                     <a class="nav-link-pseudo" class="nav-link active" href="argentine.html">L'Argentine</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link-pseudo" class="nav-link active" href="contactez-nous.html">Contactez</a>
+                    <a class="nav-link-pseudo" class="nav-link active" href="apropos.html">A propos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="new.html">Test</a>
+                    <a class="nav-link-pseudo" class="nav-link active" href="contactez-nous.html">Contactez</a>
                   </li>
+                  <!--<li class="nav-item">
+                    <a class="nav-link-pseudo" class="nav-link active" href="new.html">Test</a>
+                  </li>-->
                   <li class="nav-item dropdown">
                     <a class="nav-link-pseudo" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Menú
@@ -49,7 +52,7 @@
                 </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="rechercher un produit" aria-label="Search">
-                  <button class="nav-link-pseudo" class="btn btn-outline-secondary" type="submit">Search</button>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
               </div>
             </div>
@@ -72,7 +75,30 @@
     </div>
     <br>
     <br>
-    <form class="form_contact" action="">
+    <section class="card col-sm-6 mb-2 d-flex align-items-center">
+      <h4>Contacto</h4>
+      <div class="col-sm-11 mb-3" >
+        <label for="formGroupExampleInput" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ej: Maximiliano" class="contactClass">
+      </div>
+      <div class="col-sm-11 mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ej: Peralta">
+      </div>
+      <div class="col-sm-11 mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Email</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ej: maxi@gmail.com">
+      </div>
+      <div class="col-sm-11 mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">Button</button>
+        <button class="btn btn-danger" type="button">Delete</button>
+      </div>
+    </section>
+    <!--<form class="form_contact" action="">ANTIGUO
         <h2 class="contact">Contactez-nous</h2>
         <input class= contact_input type="text" name="Nom" placeholder="Nom">
         <input class= contact_input type="text" name="Prenom" placeholder="Prenom">
@@ -80,7 +106,8 @@
         <textarea class= contact_input name="Menssage" placeholder="Redactez ici votre text"></textarea>
         <input class= contact_input_1 type="button" value="Enviar" class="boton_form">
         <img class= uvas_contact src="style_pages/uvas_rama.png" alt="">
-    </form>
+    </form>-->
+  <section>
     <div class=contacto_padre>
         <div class="contacto_hijo">
             <img class= img_con src="style_pages/whatsapp.png" alt="">
@@ -95,7 +122,7 @@
             <p class="text_cont">Apellez nous directament xxx-xxxx</p>
         </div>
     </div>
-
+  </section> 
 <footer class="bg-dark text-white py-4">
     <div class="container">
     <nav class="row">

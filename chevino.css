@@ -32,36 +32,6 @@ a{
     list-style: none;
     margin-left:70px;     
 }
-.menu_search{
-    margin-left:10px;
-    padding: 0;
-    border: none;
-    background: none;
-    color: rgb(173, 47, 38);
-    text-decoration: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-.menu_cart{
-    margin-left: none;
-    padding: none;
-    border: none;
-    background: none;
-    color: rgb(173, 47, 38);
-    text-decoration: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-.menu_compte{
-    margin-left: none;
-    padding: 0;
-    border: none;
-    background: none;
-    color: rgb(173, 47, 38);
-    text-decoration: none;
-    font-size: 20px;
-    cursor: pointer;
-}
 /*Fin menu principal para todas las paginas*/
 /*Inicio boutique de pagina home con imagenes de vinos*/
 .img_center{
@@ -166,9 +136,9 @@ button:hover{
 }
 .img_vinos{
    border: none;
-   height: 40vh;
+   height: 26vh;
    margin: 12vh;
-   width: 16vh;
+   width: 12vh;
 }
 .pie{
     font-family:  Arial, Helvetica, sans-serif; 
@@ -307,8 +277,7 @@ button:hover{
    border: none;
    display: flex;
    flex-direction: column;
-   align-content: flex-end;
-   transform: translate(0,-340px);
+   transform: translate(0,-430px);
 }
 .contacto_hijo{
     display: flex;
@@ -352,7 +321,6 @@ button:hover{
 .container_apropos{
     display: grid;
     background: rgb(205, 109, 109);
-    gap: 10px;
     width: 100%;
     border: none;
    /* width: 80%;
@@ -365,7 +333,9 @@ button:hover{
     border: none;
     display: flex;
     justify-content: center;
+    align-content: center;
     color: rgb(247, 240, 240);
+    margin-bottom: 80px;
 }
 .header_apropos{
     grid-column: 1 /span 3;
@@ -387,6 +357,7 @@ button:hover{
 .section_apropos{
     border: none;
     height: 400px;
+    align-items: center;
     /*width: 70%;
     background: #fff;
     padding: 20px;
@@ -424,11 +395,9 @@ button:hover{
 li .dropdown-item:hover{
     font-size: 20px;
 }
-li .nav-link-pseudo:hover{
-    font-size: 20px;
+li .nav-link-pseudo:hover{;
     color: grey;
 }
 li .cepas_menu:hover{
     background-color: rgb(173, 47, 38);
 }
-.img_vino
