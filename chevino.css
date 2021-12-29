@@ -222,16 +222,6 @@ button:hover{
    
    /* animation: escalar 1.5s infinite alternate;*/
 }
-/*
-@keyframes escalar{
-    to{
-        transform: scale(1);
-    }
-    from{
-        transform: scale(1.05);
-    }
-}
-*/
 .contact{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -323,10 +313,6 @@ button:hover{
     background: rgb(205, 109, 109);
     width: 100%;
     border: none;
-   /* width: 80%;
-    max-width: 1000px;
-    margin:auto;
-    overflow: hidden;*/
 }
 
 .container_apropos > *{
@@ -386,6 +372,7 @@ li .nav-link-pseudo:hover{;
 li .cepas_menu:hover{
     background-color: rgb(173, 47, 38);
 }
+/*Mapa*/
 .mapa1{
     margin-top: none;
     
