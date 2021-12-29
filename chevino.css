@@ -340,30 +340,16 @@ button:hover{
 .header_apropos{
     grid-column: 1 /span 3;
     border: none;
-
-   /* background: grey;
-    margin: 20px 0;*/
 }
 .h1_apropos{
     border: none;
     font-size: 50px;
     padding: 20px;
-
-    /*color:#fff;
-    padding: 20px 0;
-    text-align: center;
-    */
 }
 .section_apropos{
     border: none;
     height: 400px;
     align-items: center;
-    /*width: 70%;
-    background: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: right;  */  
-
 }
 .img_apropos{
     width: 112%;
@@ -390,7 +376,6 @@ button:hover{
 }
 .footer_bootstrap{
     
-
 }
 li .dropdown-item:hover{
     font-size: 20px;
@@ -400,4 +385,8 @@ li .nav-link-pseudo:hover{;
 }
 li .cepas_menu:hover{
     background-color: rgb(173, 47, 38);
+}
+.mapa1{
+    margin-top: none;
+    
 }
