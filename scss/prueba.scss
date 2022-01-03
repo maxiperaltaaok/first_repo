@@ -1,0 +1,17 @@
+$colorprincipal:white;
+$colorletra:rgb(212, 150, 150);
+$colorsecundario: rgb(51, 50, 50);
+body{
+    background-color: rgba(250, 248, 248, 0.497);
+    color: $colorletra;
+}
+.caja_vinos{
+    background-color: $colorprincipal;
+}
+.listaCepas{
+    background-color: $colorletra;
+    border-radius: 20px;
+}
+.cepas_menu{
+    color: $colorsecundario;
+}

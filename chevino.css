@@ -79,7 +79,6 @@ a{
   }
 button:hover{
     background:none;
-
 }
 .cepas_menu svg {
     width: 100%;
@@ -102,8 +101,6 @@ button:hover{
 .cepas_menu:hover rect {
     stroke-dashoffset: 0;
 }
-
-/* a continuación grid contenedor padre como lo indica el enunciado*/
 .galeria{
    width: 100%;
    gap: 9vh;
@@ -125,7 +122,6 @@ button:hover{
       grid-template-columns: auto;
     }
   }
-/* a continuación grid contenedor hijo como lo indica el enunciado*/
 .caja_vinos{
     box-shadow: 0  1px 1px 0 grey, 0 1px 5px 0;
     display: flex;
@@ -219,8 +215,6 @@ button:hover{
     justify-content: center;
     align-items: center;
     transform: translate(-500px);
-   
-   /* animation: escalar 1.5s infinite alternate;*/
 }
 .contact{
     text-align: center;
@@ -305,7 +299,6 @@ button:hover{
         width: 50%;
     }
 }
-
 /*Fin pagina del menu contactez-nous*/
 /*Inicio pagina del menu llamada a propos*/
 .container_apropos{
@@ -314,7 +307,6 @@ button:hover{
     width: 100%;
     border: none;
 }
-
 .container_apropos > *{
     border: none;
     display: flex;
@@ -347,8 +339,6 @@ button:hover{
     margin-top: 50px;
     margin-right: 50px;
     margin-left: 30px;font-size: 30px;
-
-    
 }
 @media all and (max-width:600px){
    aside,section,header{
@@ -361,7 +351,6 @@ button:hover{
     height: 60px;
 }
 .footer_bootstrap{
-    
 }
 li .dropdown-item:hover{
     font-size: 20px;
@@ -375,5 +364,4 @@ li .cepas_menu:hover{
 /*Mapa*/
 .mapa1{
     margin-top: none;
-    
 }

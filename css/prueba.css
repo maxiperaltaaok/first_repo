@@ -1,0 +1,13 @@
+body {
+  background-color: rgba(250, 248, 248, 0.497);
+  color: #d49696; }
+
+.caja_vinos {
+  background-color: white; }
+
+.listaCepas {
+  background-color: #d49696;
+  border-radius: 20px; }
+
+.cepas_menu {
+  color: #333232; }
