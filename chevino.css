@@ -2,36 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.nav_class{
-    display: flex;
-    align-items: center;
-}
-.img_nav{
-    padding: 0;
-    width: 30%;
-    height: 40%;
-}
-.menu_class{    
-    padding: 0px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    list-style: none;   
-}
 
-.menu_class li{
-    display: inline-flex;
-    justify-content: space-evenly;
-}
-a{
-    text-decoration: none;
-    color:rgb(173, 47, 38);
-    list-style: none;
-    margin-left:70px;     
-}
 /*Fin menu principal para todas las paginas*/
 /*Inicio boutique de pagina home con imagenes de vinos*/
 .img_center{
@@ -39,74 +10,7 @@ a{
     margin-top: 16px;
     height: 600px;
 }
-.boutique{
-    font-family:'Estonia', cursive;
-    display: flex;
-    justify-content: center;
-    font-size: 40px; 
-}
-.cepas_menu{
-    border:none;
-    border-radius: 20px;
-    font-family: 'Estonia', cursive;
-    font-size: 25px;
-    padding: 10px;
-    margin-left: 40px;
-    display: inline-flex;
-    cursor: pointer;
-    position: relative;
-    background: none;
-}
-.contenedorCepas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  
-  .listaCepas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    list-style: none;
-  }
-  .listacepas li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-button:hover{
-    background:none;
-}
-.cepas_menu svg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: none;
-    border-radius: 8px;
-}
-.cepas_menu rect{
-    width: 100%;
-    height: 100%;
-    stroke: rgb(173, 47, 38);
-    stroke-width: 5px;
-    stroke-dasharray: 1000%;
-    stroke-dashoffset: 1000%;
-    transition: 2s ease all;
-}
-.cepas_menu:hover rect {
-    stroke-dashoffset: 0;
-}
-.galeria{
-   width: 100%;
-   gap: 9vh;
-   display: grid;
-   grid-template-columns: auto auto auto auto;
-}
+
 @media (max-width: 1250px) {
     .galeria {
       grid-template-columns: auto auto auto;
@@ -122,56 +26,6 @@ button:hover{
       grid-template-columns: auto;
     }
   }
-.caja_vinos{
-    box-shadow: 0  1px 1px 0 grey, 0 1px 5px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: auto;
-}
-.img_vinos{
-   border: none;
-   height: 26vh;
-   margin: 12vh;
-   width: 12vh;
-}
-.pie{
-    font-family:  Arial, Helvetica, sans-serif; 
-    border:none;
-    display: flex;
-    justify-content: center;
-}
-.texto_pie{
-    display: grid;
-    grid-template-columns: auto auto auto;  
-}
-.tit_arg{
-    font-family: 'Estonia',cursive;
-    font-size: 2em;
-    text-align: center;
-}
-.texto_arg{
-    font-family: 'Estonia';
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 1vh;
-    margin-left: 20vh;
-    margin-right: 20vh;
-}
-.subtit_arg{
-    font-family: 'Estonia';
-    font-size: 1.2em;
-    text-align: center; 
-}
-.linea{
-    background: #361212;
-    height: 1px;
-    margin-left:17%;
-    margin-right: 17%;
-    margin-top: 5px;
-    display: block;
-}
 .argetine {
     text-align: center;
     display: flex;
@@ -346,22 +200,18 @@ button:hover{
    }  
 }
 /*fin pagina de menu a propos*/
-/*footer*/
+a {
+    text-decoration: none;
+    color: rgb(143, 67, 60);
+    list-style: none;
+    margin-left:70px;     
+}
 .logofooter{
     height: 60px;
-}
-.footer_bootstrap{
 }
 li .dropdown-item:hover{
     font-size: 20px;
 }
-li .nav-link-pseudo:hover{;
+li .nav-link-pseudo:hover{
     color: grey;
-}
-li .cepas_menu:hover{
-    background-color: rgb(173, 47, 38);
-}
-/*Mapa*/
-.mapa1{
-    margin-top: none;
-}
+}  

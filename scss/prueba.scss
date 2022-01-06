@@ -1,17 +1,220 @@
 $colorprincipal:white;
-$colorletra:rgb(212, 150, 150);
+$colorletra:rgb(196, 128, 128);
 $colorsecundario: rgb(51, 50, 50);
+$colortercero: rgb(168, 164, 164);
+$colorcuarto: rgb(143, 67, 60);
+$formatoletra: Arial, Helvetica, sans-serif;
+$gray-400: #4b94dc;
+
 body{
-    background-color: rgba(250, 248, 248, 0.497);
-    color: $colorletra;
+    background-color: $colorprincipal;
 }
 .caja_vinos{
     background-color: $colorprincipal;
+    box-shadow: 0  1px 1px 0 rgb(231, 231, 235), 0 1px 4px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 39vh;
+    margin-bottom: 20px;
 }
 .listaCepas{
-    background-color: $colorletra;
+    background-color: $colortercero;
     border-radius: 20px;
 }
 .cepas_menu{
-    color: $colorsecundario;
+    background-color: $colortercero;
 }
+.img_vinos{
+    border: none;
+    height: 29vh;
+    margin: 10vh;
+    margin-left: 14vh;
+    width: 10vh;
+ }
+ .img_vinos1{
+    border: none;
+    height: 29vh;
+    margin: 10vh;
+    margin-left: 14vh;
+    width: 16vh;
+ }
+ .pie{
+     font-family:  Arial, Helvetica, sans-serif; 
+     border:none;
+     display: flex;
+     justify-content: center;
+ }
+ .texto_pie{
+     display: grid;
+     grid-template-columns: auto auto auto;  
+ }
+ .tit_arg{
+     font-family: 'Estonia','cursive';
+     font-size: 2em;
+     text-align: center;
+ }
+ .texto_arg{
+     font-family: 'Estonia';
+     font-size: 1.5em;
+     text-align: center;
+     margin-bottom: 1vh;
+     margin-left: 20vh;
+     margin-right: 20vh;
+ }
+ .subtit_arg{
+     font-family: 'Estonia';
+     font-size: 1.2em;
+     text-align: center; 
+ }
+ .linea{
+     background: #361212;
+     height: 1px;
+     margin-left:17%;
+     margin-right: 17%;
+     margin-top: 5px;
+     display: block;
+ }
+//anidación//
+.argentine{
+    h1{
+        font-family: $formatoletra;
+    }
+    h3{
+        font-family: $formatoletra; 
+    }
+}
+//mixins->funciones//
+@mixin personalizado ($hoverletra:white){ 
+    background-color: $hoverletra;
+    border-radius: 2px;
+    color: $colorletra;
+}
+.texto1_arg{
+    @include personalizado( )
+}
+.boton_color{
+    background-color: $gray-400;
+
+}
+.boutique{
+    font-family:'Estonia', 'cursive';
+    display: flex;
+    justify-content: center;
+    font-size: 40px; 
+}
+.cepas_menu{
+    border:none;
+    border-radius: 20px;
+    font-family: 'Estonia', 'cursive';
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 40px;
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+    background: none;
+}
+.contenedorCepas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .listaCepas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+  }
+  .listacepas li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+button:hover{
+    background:none;
+}
+.cepas_menu svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    border-radius: 8px;
+}
+.cepas_menu:hover rect {
+    stroke-dashoffset: 0;
+}
+.galeria{
+   width: 100%;
+   gap: 9vh;
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+}
+li .cepas_menu:hover{
+    background-color: $colorletra;
+}
+.nav_class{
+    display: flex;
+    align-items: center;
+}
+.img_nav{
+    padding: 0;
+    width: 30%;
+    height: 40%;
+}
+.menu_class{    
+    padding: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    list-style: none;   
+}
+.menu_class li{
+    display: inline-flex;
+    justify-content: space-evenly;
+} 
+/*Mapa*/
+.mapa1{
+    margin-top: none;
+}
+
+.argetine {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.contenedorArgentine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1vw;
+  }
+.img_tierra{
+    width: 20vh;
+}
+.img_cordillera{
+    width: 20vh;
+}
+.texto1_arg{
+    font-family: 'Estonia';
+}
+.texto2_arg{
+    font-family: 'Estonia';
+    margin-left: 10em;
+    margin-right: 10em;
+}
+/*Fin pagina de menu argentine*/
