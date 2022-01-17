@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*Fin menu principal para todas las paginas*/
@@ -77,15 +78,10 @@
     background: rgb(205, 109, 109);
     width: 100%;
     border: none;
-}
-.container_apropos > *{
-    border: none;
-    display: flex;
-    justify-content: center;
     align-content: center;
     color: rgb(247, 240, 240);
-    margin-bottom: 5rem;
 }
+
 .header_apropos{
     grid-column: 1 /span 3;
     border: none;
@@ -93,12 +89,15 @@
 .h1_apropos{
     border: none;
     font-size: 4rem;
-    padding: 2rem;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    
 }
 .section_apropos{
     border: none;
     height: 20rem;
     align-items: center;
+    margin-bottom: 10rem;
 }
 .img_apropos{
     width: 112%;
@@ -107,16 +106,17 @@
 .text_section_apropos{
     text-align: center;
     display: flex;
-    margin-top: 5rem;
     margin-right: 5rem;
     margin-left: 3rem;
+    margin-bottom: 50rem;
     font-size: 2rem;
 }
 @media all and (max-width:600px){
-   aside,section,header{
+   aside,section,header,.section_apropos,.img_apropos,.h1_apropos{
     grid-column: 1 /span 3;
    }  
 }
+
 /*fin pagina de menu a propos*/
 a {
     text-decoration: none;
