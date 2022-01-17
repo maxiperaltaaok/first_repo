@@ -5,11 +5,6 @@
 
 /*Fin menu principal para todas las paginas*/
 /*Inicio boutique de pagina home con imagenes de vinos*/
-.img_center{
-    width: 100%;
-    margin-top: 16px;
-    height: 600px;
-}
 
 @media (max-width: 1250px) {
     .galeria {
@@ -57,84 +52,6 @@
 }
 /*Fin pagina de menu argentine*/
 /*Inicio pagina de menu contactez-nous(CONTACTENOS)*/
-
-.form_contact{
-    width: 35%;
-    margin: auto;
-    box-sizing: border-box;
-    border-radius: 5px;
-    filter: brightness(95%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-500px);
-}
-.contact{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    margin-bottom: 20px;
-    color: brown;
-}
-.contact_input{
-    height: auto;
-    margin-bottom: 10px;
-    font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
-    color: brown;
-    border:1px solid #d1cbd1;
-    transition: all 1s;
-    background: white;
-    margin: 1vh; 
-}
-.contact_input:focus{
-    width: 50%;
-    font-size: 20px;  
-}
-.contact_input_1{
-    border:1px solid #d1cbd1;
-    height: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    color: brown;
-    width: 10vw;
-    height: 5vh;
-    margin: 1vh;
-}
-.uvas_contact{
-    width: 15vw;
-    border-radius: 5px;
-    background: white;
-}
-.contacto {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-.contacto_padre{
-   border: none;
-   display: flex;
-   flex-direction: column;
-   transform: translate(0,-430px);
-}
-.contacto_hijo{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-.contacto_hijo svg {
-    width: 5vw;
-  }
-.img_con{
-    border: none;
-    width: 10vh;
-    object-fit: cover;
-    transform: translate(200px);  
-}
-.form_contact:hover{
-    filter: brightness(100%);
-}
 .text_cont{
     border:none;
     font-family: 'Times New Roman', Times, serif;
@@ -167,7 +84,7 @@
     justify-content: center;
     align-content: center;
     color: rgb(247, 240, 240);
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 .header_apropos{
     grid-column: 1 /span 3;
@@ -175,12 +92,12 @@
 }
 .h1_apropos{
     border: none;
-    font-size: 50px;
-    padding: 20px;
+    font-size: 4rem;
+    padding: 2rem;
 }
 .section_apropos{
     border: none;
-    height: 400px;
+    height: 20rem;
     align-items: center;
 }
 .img_apropos{
@@ -190,9 +107,10 @@
 .text_section_apropos{
     text-align: center;
     display: flex;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 30px;font-size: 30px;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    margin-left: 3rem;
+    font-size: 2rem;
 }
 @media all and (max-width:600px){
    aside,section,header{
@@ -207,11 +125,11 @@ a {
     margin-left:70px;     
 }
 .logofooter{
-    height: 60px;
+    height: 6rem;
 }
 li .dropdown-item:hover{
-    font-size: 20px;
+    font-size: 2rem;
 }
 li .nav-link-pseudo:hover{
-    color: grey;
+    color: rgb(173, 170, 170);
 }  
