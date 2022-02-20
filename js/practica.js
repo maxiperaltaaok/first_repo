@@ -337,7 +337,7 @@ casiNavidad.setDate(navidad.getDate() +2);//asignamos el dia a esa fecha, con ge
 console.log(navidad);
 
 //DOM
-*/
+
 
 // Entregable clase 8 DOM->Interactuar con html
 //console.dir(document);
@@ -376,7 +376,7 @@ console.log(pruebaElementoClase);
 //Insertar elementos
 //const pruebaElementos = document.getElementById("Insertando Elementos");
 
-/*// append va a insertar al final del nodo
+// append va a insertar al final del nodo
 const creandoNodo= document.createElement("p");
 creandoNodo.innerHTML = "Creando nuevo nodo";
 creandoNodo.className = "creandoClase";//creamos clase con .className
@@ -385,7 +385,7 @@ pruebaElementos.appendChild(creandoNodo;)//inserta el nodo,en este caso la p
 // prepend va a insertar al inicio del nodo
 const insertandoNod = document.createElement("h1");
 insertandoNod.innerHTML ="<p>Nodo inicio </p>";
-creandoNodo.prepend(insertandoNod);*/
+creandoNodo.prepend(insertandoNod);
 
 //Ejemplo aplicado
 
@@ -393,7 +393,7 @@ const ultimoPrompt11 = prompt("Dime tu nombre");
 const agregandoNombre =document.createElement("h2")
 agregandoNombre.innerHTML = `Bienvenido ${ultimoPrompt11}`;
 botonDom.appendChild(agregandoNombre);
-
+*/
 /*
 //get element by id-----
 const titulo =document.getElementById(valor del Id)

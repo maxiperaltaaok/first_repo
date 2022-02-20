@@ -83,7 +83,7 @@ precio: cambio2.precio *1.21,
  //Sort
  //const sort1 = vinos2.sort(());//no me esta funcionando, que es lo que falta?
  //console.log(sort1);*/
-
+/*
  let contag = document.getElementsByTagName("h3");//cambiando tags, utilizar el for no el forEach
  console.log(contag);
  for ( const tag of contag){
@@ -95,6 +95,7 @@ precio: cambio2.precio *1.21,
 const pruebaElementos = document.getElementById("Insertando Elementos");
 
 // append va a insertar al final del nodo
+*/
 const creandoNodo= document.createElement("p");
 creandoNodo.innerHTML = "Creando nuevo nodo";
 creandoNodo.className = "creandoClase";//creamos clase con .className
@@ -111,5 +112,52 @@ creandoNodo.prepend(insertandoNod);
 //const agregandoNombre =document.createElement("h2")
 //agregandoNombre.innerHTML = `Bienvenido ${ultimoPrompt1}`;
 //contag.appendChild(agregandoNombre);
+
+//Eventos
+let evento1 = document.getElementById("botonEvento");
+evento1.addEventListener("click", iniciandoEvento);
+function iniciandoEvento() {
+  console.log("Has elegido un vino");
+}
+//let evento2 = document.getElementById("botonEvento1");
+//evento2.addEventListener("click", iniciandoEvento1);
+//function iniciandoEvento1() {
+ // console.log("Has elegido un vino");
+//}
+let evento2 = document.getElementById("botonEvento1");
+evento2.addEventListener("mouseover", function (botonEvento1) {
+  event.target.style.color ="red";
+})
+
+
+let evento3 = document.getElementById("botonEvento2");
+evento3.onmousedown = () => {
+  console.log("Click + background")
+  evento3.style.backgroundColor="grey";
+
+} 
+//evento3.onmouseup = () => {
+  //console.log("Normalidad")
+  //evento3.style.backgroundColor="blue";
+//}
+
+evento3.addEventListener("mouseup", () =>{
+  console.log("Normalidad");
+  evento3.style.backgroundColor = "white";
+})
+//console.log("El boton funciona");
+
+evento3.addEventListener("mouseover", () => {
+  console.log("over");
+
+})
+//eventos con el teclado
+let teclado = document.getElementById("botonEvento3");
+teclado.addEventListener("keydown" , (e) =>{
+    e.preventDefault();
+    console.log(e.keyCode);//no funciona, deprecado?
+    console.log("Presionando tecla");
+})
+
 
 
