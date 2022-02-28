@@ -331,7 +331,6 @@ const fragment = document.createDocumentFragment()
               title: 'Tu vino tiene un puntaje de',
               text: 'Muy buena elección!',
               footer: 'En nuestra galeria encontraras lo mejor!'
-              
             })
   
           })
