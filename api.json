@@ -2,48 +2,57 @@
     {
     "precio": 10,
     "id": 1,
+    "puntaje": 4.5,
     "title": "Rutini Cabernet Malbec",
     "thumbnailUrl": "style_pages/altos_las_hormigas_reserva.png"
 },
 {
     "precio": 12,
     "id": 2,
+    "puntaje": 4.5,
     "title": "Altos las hormigas",
     "thumbnailUrl": "style_pages/Altos_las_hormigasbio.png"
 },
 {
     "precio": 15,
     "id": 3,
+    "puntaje": 4.5,
     "title": "Altos las Hormigas BIO",
     "thumbnailUrl": "style_pages/Cafayate_reserve_malbec.png"
 },
 {
     "precio": 11,
     "id": 4,
+    "puntaje": 4.5,
     "title": "Cafayate Reserve Malbec",
     "thumbnailUrl": "style_pages/catena_nicasia_vineyard.png"
 },
 {
     "precio": 9,
     "id": 5,
+    "puntaje": 4.5,
     "title": "Catena Nicasia Vineyard",
     "thumbnailUrl": "style_pages/catena_zapata.png"
 },
 {
     "precio": 15,
     "id": 6,
+    "puntaje": 4.5,
     "title": "Hey Malbec!",
     "thumbnailUrl": "style_pages/hey_malbec.png"
 },
 {
     "precio": 11,
     "id": 7,
+    "puntaje": 4.5,
+    "puntaje":1,
     "title": "Revancha Malbec",
     "thumbnailUrl": "style_pages/revancha.png"
 },
 {
     "precio": 11,
     "id": 7,
+    "puntaje": 4.5,
     "title": "Revancha Malbec",
     "thumbnailUrl": "style_pages/revancha.png"
 }

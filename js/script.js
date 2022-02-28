@@ -201,7 +201,7 @@ const fetchData = async() =>{// con esto le decimos al codigo que se espere(ver 
     }
   }
   //introduzco los datos en las cards sin innerhtml
-  const contenedorProductos = document.querySelector('#contenedor-productos')//para poder el fragmento
+  const productContainer = document.querySelector('#contenedor-productos')//para poder el fragmento
   const pintarProductos = (data) => {//recibe la data 
     const template = document.querySelector('#template-productos').content//capturamos el template del html//.contentpara poder el fragmento
     const fragment = document.createDocumentFragment();//ver en profundidad
@@ -211,14 +211,14 @@ const fetchData = async() =>{// con esto le decimos al codigo que se espere(ver 
         template.querySelector('img').setAttribute('src', producto.thumbnailUrl)
         template.querySelector('h5').textContent = producto.title
         template.querySelector('p').textContent = producto.precio
-        template.querySelector('button').dataset.id = producto.id//id dinamico//que pasa si hay mas botones?como los identificamos con el query?
-        
+        template.querySelector('.btn-primary').dataset.id = producto.id//id dinamico//que pasa si hay mas botones?como los identificamos con el query?
+        template.querySelector('.btn-success').dataset.id = producto.puntaje
         
         
         const clone = template.cloneNode(true)
         fragment.appendChild(clone)
       })
-      contenedorProductos.appendChild(fragment)
+      productContainer.appendChild(fragment)
     }
     //carrito mediante objetos para que cuando el ususario agregue un producto se actualice el id de objetos
     let carrito = {}
@@ -260,6 +260,7 @@ const fragment = document.createDocumentFragment()
         //botones
         template.querySelector('.btn-info').dataset.id = producto.id//porque el .id? cada uno de los botones va a tener su respectivo id. una vez que los tenemos vamos a la const de los botones
         template.querySelector('.btn-danger').dataset.id = producto.id
+        
        
       const clone = template.cloneNode(true)//una vez que tenemos los templates hechos los clonamos(?)   
       fragment.appendChild(clone) 
@@ -309,7 +310,8 @@ const fragment = document.createDocumentFragment()
       const accionBotones = () => {
         const botonesAgregar = document.querySelectorAll('#items .btn-info')
         const botonesEliminar = document.querySelectorAll('#items .btn-danger')
-        
+        const customInfo = document.getElementById('customInfo');
+
         botonesAgregar.forEach(btn => {
         btn.addEventListener('click', () => { 
           console.log(btn.dataset)//agregamos
@@ -319,6 +321,22 @@ const fragment = document.createDocumentFragment()
          pintarcarrito()
           })
         })
+        
+        
+        //customInfo.forEach(btn => {
+          customInfo.addEventListener('click', (e) => { 
+            //e.preventDefault();
+            Swal.fire({
+              icon: 'info',
+              title: 'Tu vino tiene un puntaje de',
+              text: 'Muy buena elección!',
+              footer: 'En nuestra galeria encontraras lo mejor!'
+              
+            })
+  
+          })
+      //  })
+        
 
         botonesEliminar.forEach(btn => {
         btn.addEventListener('click', () => { 
@@ -337,3 +355,4 @@ const fragment = document.createDocumentFragment()
       }
       //items.appendChild(fragment)
 }
+
