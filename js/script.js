@@ -212,7 +212,7 @@ const fetchData = async() =>{// con esto le decimos al codigo que se espere(ver 
         template.querySelector('h5').textContent = producto.title
         template.querySelector('p').textContent = producto.precio
         template.querySelector('.btn-primary').dataset.id = producto.id//id dinamico//que pasa si hay mas botones?como los identificamos con el query?
-        template.querySelector('.btn-success').dataset.id = producto.puntaje
+        template.querySelector('.btn-success').dataset.id = producto.id
         
         
         const clone = template.cloneNode(true)
@@ -310,7 +310,7 @@ const fragment = document.createDocumentFragment()
       const accionBotones = () => {
         const botonesAgregar = document.querySelectorAll('#items .btn-info')
         const botonesEliminar = document.querySelectorAll('#items .btn-danger')
-        const customInfo = document.getElementById('customInfo');
+        const customInfo = document.querySelectorAll('#customInfo');
 
         botonesAgregar.forEach(btn => {
         btn.addEventListener('click', () => { 
@@ -322,10 +322,23 @@ const fragment = document.createDocumentFragment()
           })
         })
         
-        
-        //customInfo.forEach(btn => {
-          customInfo.addEventListener('click', (e) => { 
-            //e.preventDefault();
+        botonesAgregar.forEach(btn => {
+          btn.addEventListener('click', () => { 
+
+            Toastify({
+
+              text: "Añadido",
+              
+              duration: 3000
+              
+              }).showToast();
+            })
+          })
+
+
+        customInfo.forEach(btn => {
+          customInfo.forEach(elemento=>elemento.addEventListener('click', (e) => { 
+            e.preventDefault();
             Swal.fire({
               icon: 'info',
               title: 'Tu vino tiene un puntaje de',
@@ -333,8 +346,9 @@ const fragment = document.createDocumentFragment()
               footer: 'En nuestra galeria encontraras lo mejor!'
             })
   
-          })
-      //  })
+          }))
+        })
+  
         
 
         botonesEliminar.forEach(btn => {
@@ -350,8 +364,20 @@ const fragment = document.createDocumentFragment()
             pintarcarrito()
             })
           })
-        
+          botonesEliminar.forEach(btn => {
+            btn.addEventListener('click', () => { 
+  
+              Toastify({
+  
+                text: "Eliminado",
+                
+                duration: 3000
+                
+                }).showToast();
+              })
+            })
       }
       //items.appendChild(fragment)
 }
 
+const infoPractica = document.getElementById("practicajs")

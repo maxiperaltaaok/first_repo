@@ -526,3 +526,66 @@ console.log(nombre.value, apellidos, value);
 }
 
 )*/
+//variables
+/*
+document.addEventListener("DOMContentLoaded", () => {
+  fetchData()
+})
+
+const fetchData = async() =>{// con esto le decimos al codigo que se espere(ver try , catch, fetch, res, dataset,parseInt)//create element con fragment no tienen refloat
+    try {
+      const res = await fetch('api.json');
+      const data = await res.json()
+    } catch (error) {
+      console.log(error)//si hay algun error que lo pinte en consola
+     }
+   }
+*/
+
+let allContainerCart = document.querySelector('.products');
+let containerBuyCart = document.querySelector('.card-items')
+
+
+
+//funciones
+loadEventListenrs();
+function loadEventListenrs(){
+  allContainerCart.addEventListener('click', addProduct);
+}//tomamos solo el click del boton mediante la clase del boton
+function addProduct(e) {
+  e.preventDefault();
+  if (e.target.classList.contains('btn-add-cart')) {
+    const selectProduct = e.target.parentElement;
+   readTheContent(selectProduct);
+    //console.log(selectProduct)
+  }
+
+}
+
+function readTheContent(product){
+  const infoProduct = {
+    image: product.querySelector('div img').src,
+    title: product.querySelector('.title').textContent,
+    price: product.querySelector('div p span').textContent,
+    id: product.querySelector('a').getAttribute('data-id'),
+    amount: 1
+  }
+  buyThings = [...buyThings, infoProduct]
+loadHtml();
+  console.log(infoProduct);
+}
+function loadHtml (){
+   buyThings.forEach(product =>{//primero recorremos el objeto con un forEach
+    const {image,title,price,amount,id} = product;
+    const row = document.createElement('div');
+    row.classList.add('item');
+    row.innerHTML =`
+    <img src="${image}" class="img_vinos"alt="">
+    <p class="${title}">Rutini Malbec</p>
+    <p><span>"${price}$"</span></p>
+    <a href="" data-id="${id}" class="btn-add-cart">Add </a>
+  `;
+  })
+
+
+ 
