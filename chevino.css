@@ -133,3 +133,99 @@ li .dropdown-item:hover{
 li .nav-link-pseudo:hover{
     color: rgb(173, 170, 170);
 }  
+
+.iconoCart{
+    width: 30px;
+    height: 29px;
+    margin-left: 3rem;
+}
+.iconoCart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+/*Carrito*/
+.img-carrito{
+    width: 30px;
+    height: 29px;
+    margin-left: 3rem;
+}
+.foto-vino{
+    width: 4rem;
+    height: 10rem;
+}
+.submenu{
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+    transition-duration: .5s;
+}
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+    color: hotpink; 
+    top: 100%;
+    transition-duration: .5s;
+    z-index: 1;
+    background-color: white;
+    padding: 30px;
+    min-height: 400px;
+    min width: 300px;
+    
+}
+.vacio{
+    padding: 10px;
+    background-color: rgb(173, 79, 79);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+   margin-left: 120px;
+}
+.contenido-hero{
+  
+}
+
+#vaciar-carrito{
+
+}
+.mierda{
+    color: rgb(167, 54, 54);
+    margin-left: 50px;
+}
+.mierda1{
+    padding: 0;
+    text-align: center;
+    
+
+}
+.cart-products{
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    padding: 0 18px ;
+    display: none;
+}
+.galeria{
+    padding-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.carts{
+    max-width: 250px;
+    box-shadow: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.carts img {
+    width: 100%;
+}
+.carts p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+

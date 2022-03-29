@@ -1,187 +1,3 @@
-//let hola = alert("Aprieta el search para iniciar el proceso");
-//let practicajs = document.getElementById("practicajs")//linea 1 y 2 no las incluyo porque sino deja de funcionar.
-//practicajs.addEventListener('click', function() {
-  //event.preventDefault()
-  //----------------------------
-  /*
-const materiasUni =["JavaScript", "PHP", ".NET", "phyton"];
-  console.log("Hola estas son los lenguajes disponibles ");
-  console.log(materiasUni);
-
-let tuMateria = prompt("Dime que lenguaje quieres aprender y que no este aquí");
-if (tuMateria !== '');
-materiasUni.unshift(tuMateria);
-console.log("Perfecto la incluimos al inicio porque sabemos que es tu preferida!");
-console.log(materiasUni);
-const consultaUser1 = materiasUni.concat(tuMateria);
-console.log("No,mejor al inicio!!");
-let tuMateria1 = prompt("Genial! Dinos otra para personalizartelo aun mas!");
-if (tuMateria1 !== '');
-materiasUni.push(tuMateria1);
-console.log(materiasUni);
-console.log("Esta realmente te interesa?")
-let tuMateria2 = materiasUni.slice(2,3);
-let consulta1 = prompt("Esta realmente te interesa ? " + tuMateria2);
-if (consulta1 == "si") {
-  console.log("Nos parecia! la dejamos!")
-  }  else{
-console.log("Perfecto la quitamos")
-  }
-  let materiasFinal = 
-  console.log("Con todo este lio, hemos incluido phyton?");
-  console.log( materiasUni.includes('phyton'));
-  console.log("Y PHP te tocará en el trimestre numero");
-  console.log(materiasUni.indexOf("PHP"));
-
-  let hola = prompt("Introduce un numero");
-  console.log("Tu resultado por pi es")
-    console.log(hola * Math.PI);
-    //array1
-const vinos1 = [
-      { nombre:"Rutini", precio: "10" },
-      { nombre:"Altos las hormigas", precio: "12"},
-      { nombre:"Altos las hormigas BIO", precio: "15"},
-      { nombre:"Cafayate reserve", precio: "11"},
-      { nombre:"Catena Nicasia Vineyard", precio: "9"},
-      { nombre:"Catena Zapata", precio: "8"},
-      { nombre:"Hey Malbec", precio: "15"}
-    ];
-//array2
-    const vinos2 = [
-      { nombre:"Revancha Malbec", precio: "11"},
-      { nombre:"Vino", precio: "9"},
-    ];
-
-console.log(vinos1.length);
-vinos1.forEach(vinos => console.log(vinos))
-//console.log(vinos1.indexOf("Catena Zapata"));
-//let vinos3  = vinos1.shift();
-  //console.log()
-//concatenar
-const vinos4 = vinos1.concat(vinos2);
-console.log(vinos4)
-//metodo indexof
-console.log(vinos4.indexOf('Hey Malbec'))// porque me sale-1 si pongo cualquier nombre de vino?
-//metodo find 
-console.log (resultadoVinosFind = vinos4.find((encuentra) => encuentra.nombre === "Rutini"))
-//filter
-console.log (usandoFilter = vinos4.filter((enucentra1) => enucentra1.precio === "8"))
-//Some
-console.log (usandoSome = vinos4.some((enucentra2) => enucentra2.nombre === "Altos las hormigas"))
-console.log (usandoSome = vinos4.some((enucentra2) => enucentra2.nombre === "Zucardi"))
-//Map nombres
-const usandoMap = vinos4.map((cambio1) =>  cambio1.nombre,)
- console.log(usandoMap);
- // Map + precio con iva
- const usandoMap1 = vinos1.map((cambio2) =>  {
-return{
-nombre: cambio2.nombre,
-precio: cambio2.precio *1.21,
-}
- })
- console.log(usandoMap1)
- //Sort
- //const sort1 = vinos2.sort(());//no me esta funcionando, que es lo que falta?
- //console.log(sort1);*/
-/*
- let contag = document.getElementsByTagName("h3");//cambiando tags, utilizar el for no el forEach
- console.log(contag);
- for ( const tag of contag){
-  tag.innerHTML = "Cambiando el contacto";
- }
-
- //Insertar elementos
-
-const pruebaElementos = document.getElementById("Insertando Elementos");
-
-// append va a insertar al final del nodo
-
-const creandoNodo= document.createElement("p");
-creandoNodo.innerHTML = "Creando nuevo nodo";
-creandoNodo.className = "creandoClase";//creamos clase con .className
-console.log(creandoNodo);
-//pruebaElementos.appendChild(creandoNodo);//inserta el nodo,en este caso la p
-// prepend va a insertar al inicio del nodo
-const insertandoNod = document.createElement("h1");
-insertandoNod.innerHTML ="<p>Nodo inicio </p>";
-creandoNodo.prepend(insertandoNod);
-*/
-//Ejemplo aplicado
-
-//const ultimoPrompt1 = prompt("Dime tu nombre");
-//const agregandoNombre =document.createElement("h2")
-//agregandoNombre.innerHTML = `Bienvenido ${ultimoPrompt1}`;
-//contag.appendChild(agregandoNombre);
-/*
-//Eventos
-let evento1 = document.getElementById("botonEvento");
-evento1.addEventListener("click", iniciandoEvento);
-function iniciandoEvento() {
-  console.log("Has elegido un vino");
-}
-//let evento2 = document.getElementById("botonEvento1");
-//evento2.addEventListener("click", iniciandoEvento1);
-//function iniciandoEvento1() {
- // console.log("Has elegido un vino");
-//}
-let evento2 = document.getElementById("botonEvento1");
-evento2.addEventListener("mouseover", function (botonEvento1) {
-  event.target.style.color ="red";
-})
-
-
-let evento3 = document.getElementById("botonEvento2");
-evento3.onmousedown = () => {
-  console.log("Click + background")
-  evento3.style.backgroundColor="grey";
-
-} 
-//evento3.onmouseup = () => {
-  //console.log("Normalidad")
-  //evento3.style.backgroundColor="blue";
-//}
-
-evento3.addEventListener("mouseup", () =>{
-  console.log("Normalidad");
-  evento3.style.backgroundColor = "white";
-})
-//console.log("El boton funciona");
-
-evento3.addEventListener("mouseover", () => {
-  console.log("over");
-
-})
-//eventos con el teclado
-let teclado = document.getElementById("botonEvento3");
-teclado.addEventListener("keydown" , (e) =>{
-    e.preventDefault();
-    console.log(e.keyCode);//no funciona, deprecado?
-    console.log("Presionando tecla");
-})
-
-const BIENVENIDA = "Hola";
-localStorage.setItem("Hola" , "Almacenando"); //guardamosstrings
-localStorage.setItem("Numero" , 1223); //numero
-localStorage.setItem("booleano" , true); //booleano(ejemplo recibiendoedaddeunformulario)
-
-//variables storage
-const saludosStorage = localStorage.getItem(BIENVENIDA);
-
-//variables del dom
-const saludo = document.getElementById("saludos");
-saludo.innerHTML = saludosStorage;
-
-//recibe dos parametros : llave  y el valor -- la llave  siempre es un string
-//el valor  puede ser de distinto tipo(texto,numerico, boolean)
-localStorage.setItem("key"1234);
-localStorage.getItem("key");
-localStorage.removeItem("key");//elimina la info del localstorage(ej logout)
-localStorage.clear("key");//
-
-//storage con objetos
-const producto = {id: 1, nombre:"pan", precio:1234}
-
-
 contenido.innerHTML = producto*/
 //consumiendo el json para obtener los datos
 document.addEventListener("DOMContentLoaded", () => {
@@ -192,7 +8,6 @@ const fetchData = async() =>{// con esto le decimos al codigo que se espere(ver 
     try {
       const res = await fetch('api.json');
       const data = await res.json()//res significa response
-      //console.log(data)
       pintarProductos(data);
       detectarBotones(data);
 
@@ -206,8 +21,7 @@ const fetchData = async() =>{// con esto le decimos al codigo que se espere(ver 
     const template = document.querySelector('#template-productos').content//capturamos el template del html//.contentpara poder el fragmento
     const fragment = document.createDocumentFragment();//ver en profundidad
    // una vez que tenemos el fragmento recorremos la data con array.forEach(element => {
-      data.forEach(producto => {
-        console.log(producto);
+    Object.values(data).forEach(producto => {
         template.querySelector('img').setAttribute('src', producto.thumbnailUrl)
         template.querySelector('h5').textContent = producto.title
         template.querySelector('p').textContent = producto.precio
@@ -215,7 +29,7 @@ const fetchData = async() =>{// con esto le decimos al codigo que se espere(ver 
         template.querySelector('.btn-success').dataset.id = producto.id
         
         
-        const clone = template.cloneNode(true)
+        const clone = template.cloneNode(true)x
         fragment.appendChild(clone)
       })
       productContainer.appendChild(fragment)
